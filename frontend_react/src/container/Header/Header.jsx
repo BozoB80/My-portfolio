@@ -35,7 +35,6 @@ const Header = () => {
           </div>
           <div className='tag-cmp app__flex'>
             <p className='p-text'>Front-end Developer</p>
-            <p className='p-text'>UI/UX designer</p>
           </div>
         </div>
       </motion.div>
@@ -43,29 +42,21 @@ const Header = () => {
       <motion.div
         whileInView={{ opacity: [0, 1]}}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
-        className="app__header-img"
       >
-        <img src={images.profile2} alt="profile_bg" />
-        <motion.img
-          whileInView={{ scale: [0, 1]}}
-          transition={{ duration: 1, ease: 'easeInOut' }}
-          src={images.circle}
-          alt="profile_circle"
-          className="overlay_circle"
-        />
-      </motion.div> 
+          <div className="about-text">As a junior frontend developer with 1 year of experience, I have worked on two projects - a gym project and an obituary project called Nekros. My best skills include React.js, Next.js, JavaScript, and Tailwind, as well as experience with Framer Motion. I am always willing to learn new skills and accept challenges, and am excited to bring my passion and dedication to my next role.</div>
+      </motion.div>
 
       <motion.div
         variants={scaleVariants}
         whileInView={scaleVariants.whileInView}
-        className="app__header-circles"      
+        className="app__header-circles"
       >
         {[images.tailwind, images.javascript, images.react, images.next, images.framer].map((circle, index) => (
           <div className='circle-cmp app__flex' key={`circle-${index}`}>
             <img src={circle} alt="circle" />
           </div>
         ))}
-      </motion.div>       
+      </motion.div>
     </div>
   )
 }
