@@ -1,3 +1,12 @@
 # Readme
 
-Here you should put some basic info about project setup
+Pre-requisites:
+- You should be added as a member in sanity project `My portfoli` ask Bozo Bakula user for an access.
+- You should have node@16 running locally
+To successfully setup a project locally for the first time, please follow next steps:
+1. in `backend_sanity` folder run `npm install`
+2. install sanity globally on your PC with `npm install -g @sanity/cli`
+3. run `sanity build`
+4. move to `frontend_react` folder
+5. run `npm install`
+6. run `npm start`
