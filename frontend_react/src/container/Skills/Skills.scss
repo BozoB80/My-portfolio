@@ -136,6 +136,21 @@
     }
 }
 
+.boldexp-text {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--black-color);
+    text-align: left;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 2rem;
+    }
+
+    @media screen and (max-width: 450px) {
+      font-size: 0.9rem;
+    }
+  }
+
 .skills-tooltip {
     max-width: 300px !important;
     background-color: var(--white-color) !important;

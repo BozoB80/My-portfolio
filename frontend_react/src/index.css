@@ -12,6 +12,18 @@
   --white-color: #ffffff;
 }
 
+:root[data-theme='dark'] {
+  --font-base: "DM Sans", sans-serif;
+
+  --primary-color: #01060c;
+  --secondary-color: #6d74c9;
+  --black-color: #ffffff;
+  --lightGray-color: #2c2b2b;
+  --gray-color: #6b7688;
+  --brown-color: #dfd4e2;
+  --white-color: #000000;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

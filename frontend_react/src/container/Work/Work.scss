@@ -48,6 +48,7 @@
 
     .app__work-item {
         width: 270px;
+        height: 420px;
         flex-direction: column;
         margin: 2rem;
         padding: 1rem;
@@ -182,7 +183,22 @@
     }
 }
 
-.app__work-popup-items {
-    
+.app__work-description {
+    font-size: 0.8rem;
+    text-align: left;
+    color: var(--gray-color);
+    line-height: 1.5;
+    margin-top: 10px;
+    width: 222px;
+    height: 80px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    white-space: pre-wrap;
+
+    @media screen and (min-width: 2000px) {
+      font-size: 1.75rem;
+    }
 }
 

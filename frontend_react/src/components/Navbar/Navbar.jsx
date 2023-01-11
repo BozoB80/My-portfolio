@@ -15,7 +15,7 @@ const Navbar = () => {
         <img src={images.blogo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
+        {['home', 'skills', 'work', 'about', 'contact'].map((item) => (
           <motion.li 
             className="app__flex p-text" 
             key={`link-${item}`}
@@ -38,10 +38,8 @@ const Navbar = () => {
             transition={{ duration: 0.85, ease: 'easeOut' }}
           >
             <HiX onClick={() => setToggle(false)} />
-            <ul
-              
-            >
-              {['home', 'about', 'work', 'skills', 'contact'].map((item, i) => (
+            <ul>
+              {['home', 'skills', 'work', 'about', 'contact'].map((item, i) => (
                 <motion.li key={item}
                   variants={fadeIn('left', 'spring', i * 0.5, 0.7)}
                   initial="hidden"

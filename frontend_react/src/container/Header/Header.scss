@@ -20,16 +20,23 @@
     height: 100%;
     flex-direction: row;
 
-    padding: 6rem 2rem 0;
+    padding: 3rem 2rem 0;
 
     @media screen and (min-width: 2000px) {
         padding-top: 8rem;
     }
+    @media screen and (max-width: 1600px) {
+      padding: 4rem 0 0 0;
+    }
     @media screen and (max-width: 1200px) {
         flex-direction: column;
+        padding-top: 4rem;
     }
+    @media screen and (max-width: 800px) {
+      padding: 2rem 0;
+  }
     @media screen and (max-width: 450px) {
-        padding: 6rem 1rem 2rem;
+        padding: 4rem 1rem 2rem;
     }
 }
 
@@ -55,12 +62,28 @@
     flex-direction: column;
 
     .badge-cmp, .tag-cmp {
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         border: var(--white-color);
         border-radius: 15px;
         flex-direction: row;
         width: auto;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .badge-cmp {
+      @media screen and (min-width: 2000px) {
+        width: 600px;
+      }
+
+      @media screen and (max-width: 2000px) {
+        padding: 10px 20px;
+        width: 380px;
+      }
+
+      @media screen and (max-width: 600px) {
+        width: auto;
+    }
+
     }
 
     .tag-cmp {
@@ -72,6 +95,12 @@
             text-transform: uppercase;
             text-align: right;
         }
+
+        @media screen and (max-width: 1200px) {
+            margin-top: 2rem;
+            flex-direction: row;
+            align-items: flex-end;
+        }
     }
 
     span {
@@ -80,12 +109,69 @@
         @media screen and (min-width: 2000px) {
             font-size: 5rem;
         }
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 0;
+        }
     }
 
     @media screen and (max-width: 1200px) {
         justify-content: flex-start;
         align-items: flex-start;
     }
+}
+
+.app__intro-badge {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .badge-cmp2, .tag-cmp {
+        padding: 1rem 2rem;
+        border: var(--white-color);
+        border-radius: 15px;
+        flex-direction: row;
+        width: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+        @media screen and (min-width: 2000px) {
+          font-size: 2rem;
+        }
+
+        @media screen and (max-width: 600px) {
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
+    }
+    
+    .badge-cmp3 {
+        padding: 1rem 2rem;
+        margin-top: 2rem;
+        border: var(--white-color);
+        border-radius: 15px;
+        flex-direction: row;
+        width: auto;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    @media screen and (max-width: 1500px) {
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+
+    @media screen and (max-width: 1200px) {
+        padding: 2rem 0;
+    }
+
+    
+}
+
+.intro-div {
+    padding: 5rem;
 }
 
 .app__header-circles {
@@ -150,7 +236,7 @@
         }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1500px) {
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
