@@ -2,26 +2,51 @@
 
 :root {
   --font-base: "DM Sans", sans-serif;
+  --bg-main: url('assets/bgIMG.png');
 
+  --bg-appwhite: #ffffff;
+  --bg-appprimary: #edf2f8;
+  
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
   --black-color: #030303;
   --lightGray-color: #e4e4e4;
   --gray-color: #6b7688;
-  --brown-color: #46364a;
   --white-color: #ffffff;
+  --navbar-color: rgba(255, 255, 255, 0.25);
+  --navtext-color: #6b7688;
+  --box-shadow: rgba(0, 0, 0, 0.1);
+  --social-color: #ffffff;
+  --svg-color: #6b7688;
+  --skills-color: #edf2f8;
+  --work-color: #ffffff;
 }
 
-:root[data-theme='dark'] {
+[data-theme='dark'] {
   --font-base: "DM Sans", sans-serif;
+  --bg-main: url('assets/bgWhite.png');
+
+  --bg-appwhite: #3b3b3bda;
+  --bg-appprimary: #01060c;
+
+  /* whiten Next.js image */
+  --next-image: brightness(0) invert(1);
 
   --primary-color: #01060c;
-  --secondary-color: #6d74c9;
+  --secondary-color: #c7202e;
   --black-color: #ffffff;
-  --lightGray-color: #2c2b2b;
+  --lightGray-color: #4b4747;
   --gray-color: #6b7688;
   --brown-color: #dfd4e2;
   --white-color: #000000;
+  --navbar-color: #030303;
+  --navtext-color: #ebeef3;
+  --header-color: #18223380;
+  --box-shadow: rgba(240, 229, 229, 0.678);
+  --social-color: #aab0b9;
+  --svg-color: #030303;
+  --skills-color: #3b3e42;
+  --work-color: #414141;
 }
 
 * {

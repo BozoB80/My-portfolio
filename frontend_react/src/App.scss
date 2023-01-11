@@ -4,11 +4,11 @@
   }
 
   .app__whitebg {
-    background-color: var(--white-color);
+    background-color: var(--bg-appwhite);
   }
 
   .app__primarybg {
-    background-color: var(--primary-color);
+    background-color: var(--bg-appprimary);
   }
 
   .app__container {
@@ -74,7 +74,9 @@
   .about-text {
     padding: 30px;
     font-size: 1.4rem;
+    font-weight: 400;
     text-align: justify;
+    color: var(--black-color);
 
     li {
       margin-bottom: 10px;
@@ -86,7 +88,7 @@
   .p-text {
     font-size: 0.8rem;
     text-align: left;
-    color: var(--gray-color);
+    color: var(--navtext-color);
     line-height: 1.5;
 
     @media screen and (min-width: 2000px) {
@@ -121,7 +123,7 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: var(--white-color);
+      background-color: var(--social-color);
       margin: 0.25rem 0;
       border: 1px solid var(--lightGray-color);
 
@@ -134,7 +136,7 @@
       svg {
         width: 15px;
         height: 15px;
-        color: var(--gray-color);
+        color: var(--svg-color);
       }
 
       &:hover {

@@ -6,8 +6,8 @@
     align-items: center;
 
     padding: 1rem 2rem;
-    background: rgba(255, 255, 255, 0.25);
-    // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background: var(--navbar-color);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -59,7 +59,7 @@
       }
 
       a {
-        color: var(--gray-color);
+        color: var(--navtext-color);
         text-decoration: none;
         flex-direction: column;
 
@@ -173,4 +173,22 @@
     @media screen and (min-width: 900px) {
       display: none;
     }
+  }
+
+  .switch {
+    width: 80px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 50px;
+    border: 1 solid 50px;
+    border-color: var(--black-color);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .button_switch {
+    background-color: var(--navbar-color);
+    border: none;
   }

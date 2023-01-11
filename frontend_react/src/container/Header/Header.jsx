@@ -27,16 +27,16 @@ const Header = () => {
         className="app__header-info"
       >
         <div className='app__header-badge'>
-          <div className='badge-cmp app__flex'>
+          <motion.div whileHover={{ scale: 1.1 }} className='badge-cmp app__flex'>
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
-              <p className='p-text'>Hello, I am</p>
+              <p className='p-text'>Hello, my name is</p>
               <h1 className='head-text'>Božo Bakula</h1>
             </div>
-          </div>
-          <div className='tag-cmp app__flex'>
+          </motion.div>
+          <motion.div whileHover={{ scale: 1.1 }} className='tag-cmp app__flex'>
             <p className='p-text'>Front-end Developer</p>
-          </div>
+          </motion.div>
         </div>
       </motion.div>
 
@@ -46,7 +46,10 @@ const Header = () => {
         whileInView="show"
         className='app__intro-badge'
       >
-          <ul className="badge-cmp2 about-text">
+          <motion.ul
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.5 }}
+            className="badge-cmp2 about-text">
             {['As a Junior Frontend Developer with a year of experience under my belt, I have had the opportunity to work on a variety of projects, including a gym project and a project called Nekros which focused on obituary management.',            
             'I have honed my skills in React.js, Next.js, JavaScript, and Tailwind, as well as gained experience working with Framer Motion.',
             'Eager to continue learning and expanding my skills, I am excited to bring my passion and dedication to my next role. Always ready to take on new challenges and thrive in dynamic environments.',
@@ -59,10 +62,12 @@ const Header = () => {
                 {sentence}
               </motion.li>
             ))}
-          </ul>
+          </motion.ul>
 
           <motion.p
             variants={fadeIn('left', 'spring', 2.4, 1)}
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.5 }}
             className="badge-cmp3 about-text"
           >
             I created this portfolio website with React, SCSS, Framer Motion and Sanity backend in order to showcase some of my skills. 
@@ -77,9 +82,12 @@ const Header = () => {
         className="app__header-circles"
       >
         {[images.tailwind, images.javascript, images.react, images.next, images.framer].map((circle, index) => (
-          <div className='circle-cmp app__flex' key={`circle-${index}`}>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            className='circle-cmp app__flex' 
+            key={`circle-${index}`}>
             <img src={circle} alt="circle" />
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

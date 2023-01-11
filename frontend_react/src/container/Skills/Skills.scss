@@ -43,7 +43,7 @@
         width: 90px;
         height: 90px;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: var(--skills-color);
 
         img {
             width: 50%;
@@ -154,10 +154,10 @@
 .skills-tooltip {
     max-width: 300px !important;
     background-color: var(--white-color) !important;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 0 25px var(--box-shadow) !important;
     border-radius: 5px !important;
     padding: 1rem !important;
-    color: var(--gray-color) !important;
+    color: var(--black-color) !important;
     text-align: center !important;
     line-height: 1.5 !important;
     opacity: 1 !important;

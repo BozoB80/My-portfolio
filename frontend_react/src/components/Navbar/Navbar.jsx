@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import { images } from '../../constants';
 import './Navbar.scss';
 
-const Navbar = () => {
+
+const Navbar = ({switchTheme}) => {
   const [toggle, setToggle] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(true);
+
+  const toggleDarkMode = (checked) => {
+    setDarkMode(checked);
+  };
 
   return (
     <nav className="app__navbar">
@@ -28,6 +35,14 @@ const Navbar = () => {
           </motion.li>
         ))}
       </ul>
+      
+      <button class='button_switch' onClick={switchTheme}>
+        <DarkModeSwitch 
+          checked={isDarkMode}
+          onChange={toggleDarkMode}
+          size={30}
+        />
+      </button>
 
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
