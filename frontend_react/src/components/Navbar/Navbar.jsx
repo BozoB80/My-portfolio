@@ -10,7 +10,7 @@ import './Navbar.scss';
 
 const Navbar = ({switchTheme}) => {
   const [toggle, setToggle] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(true);
+  const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = (checked) => {
     setDarkMode(checked);
@@ -36,7 +36,7 @@ const Navbar = ({switchTheme}) => {
         ))}
       </ul>
       
-      <button class='button_switch' onClick={switchTheme}>
+      <button className='button_switch' onClick={switchTheme}>
         <DarkModeSwitch 
           checked={isDarkMode}
           onChange={toggleDarkMode}

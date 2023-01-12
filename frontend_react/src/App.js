@@ -7,7 +7,7 @@ import './App.scss'
 
 const App = () => {
   
-  const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const defaultDark = 'dark'
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const switchTheme = () => {
