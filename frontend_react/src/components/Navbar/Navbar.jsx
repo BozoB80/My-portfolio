@@ -19,7 +19,7 @@ const Navbar = ({switchTheme}) => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={isDarkMode ? images.bblogo2 : images.bblogo1} alt="logo" />
+        <img src={isDarkMode ? images.bblogo1 : images.bblogo2} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {['home', 'skills', 'work', 'about', 'contact'].map((item) => (
