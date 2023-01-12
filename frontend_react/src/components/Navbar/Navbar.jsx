@@ -10,7 +10,7 @@ import './Navbar.scss';
 
 const Navbar = ({switchTheme}) => {
   const [toggle, setToggle] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(true);
+  const [isDarkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = (checked) => {
     setDarkMode(checked);
@@ -18,8 +18,10 @@ const Navbar = ({switchTheme}) => {
 
   return (
     <nav className="app__navbar">
-      <div className="app__navbar-logo">
-        <img src={isDarkMode ? images.bblogo1 : images.bblogo2} alt="logo" />
+      <div  className="app__navbar-logo">
+        <a href="#home">
+        <img src={isDarkMode ? images.bblogo2 : images.bblogo1} alt="logo" />
+        </a>
       </div>
       <ul className="app__navbar-links">
         {['home', 'skills', 'work', 'about', 'contact'].map((item) => (

@@ -25,12 +25,12 @@
       height: auto;
 
       @media screen and (min-width: 2000px) {
-        width: 180px;
-        height: 40px;
+        width: 80px;
+        height: auto;
       }
       @media screen and (max-width: 650px) {
-        width: 130px;
-        height: 25px;
+        width: 80px;
+        height: auto;
       }
     }
   }
@@ -150,7 +150,7 @@
           margin: 1rem;
 
           a {
-            color: var(--gray-color);
+            color: var(--navtext-color);
             text-decoration: none;
             font-size: 1rem;
             text-transform: uppercase;
@@ -174,21 +174,10 @@
       display: none;
     }
   }
-
-  .switch {
-    width: 80px;
-    height: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 50px;
-    border: 1 solid 50px;
-    border-color: var(--black-color);
-    padding: 10px;
-    cursor: pointer;
-  }
   
   .button_switch {
     background-color: var(--navbar-color);
     border: none;
+
+    
   }
