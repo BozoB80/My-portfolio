@@ -157,7 +157,16 @@
         border-radius: 15px;
         flex-direction: row;
         width: auto;
-        box-shadow: 0 0 20px var(--box-shadow)
+        box-shadow: 0 0 20px var(--box-shadow);
+
+        @media screen and (min-width: 2000px) {
+            font-size: 2rem;
+        }
+  
+        @media screen and (max-width: 600px) {
+            padding: 1rem;
+            font-size: 1.1rem;
+        }
     }
 
     @media screen and (max-width: 1500px) {

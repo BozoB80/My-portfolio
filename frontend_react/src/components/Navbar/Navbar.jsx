@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import { fadeIn } from '../../utils/motion';
+import { fadeIn, slideIn } from '../../utils/motion';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 import { images } from '../../constants';
@@ -20,7 +20,7 @@ const Navbar = ({switchTheme}) => {
     <nav className="app__navbar">
       <div  className="app__navbar-logo">
         <a href="#home">
-        <img src={isDarkMode ? images.bblogo2 : images.bblogo1} alt="logo" />
+          <img src={isDarkMode ? images.bblogo2 : images.bblogo1} alt="logo" />
         </a>
       </div>
       <ul className="app__navbar-links">
@@ -47,12 +47,15 @@ const Navbar = ({switchTheme}) => {
       </button>
 
       <div className="app__navbar-menu">
-        <HiMenuAlt4 onClick={() => setToggle(true)} />
+        {!toggle && (
+          <HiMenuAlt4 onClick={() => setToggle(true)} />
+        )}
 
         {toggle && (
           <motion.div
-            whileInView={{ x: [300, 0] }}
-            transition={{ duration: 0.85, ease: 'easeOut' }}
+            variants={slideIn('up', 'spring', 0, 2)}
+            initial="hidden"
+            whileInView="show"
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>

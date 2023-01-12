@@ -27,14 +27,14 @@ const Header = () => {
         className="app__header-info"
       >
         <div className='app__header-badge'>
-          <motion.div whileHover={{ scale: 1.1 }} className='badge-cmp app__flex'>
+          <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} className='badge-cmp app__flex'>
             <span>👋</span>
             <div style={{ marginLeft: 20 }}>
               <p className='p-text'>Hello, my name is</p>
               <h1 className='head-text'>Božo Bakula</h1>
             </div>
           </motion.div>
-          <motion.div whileHover={{ scale: 1.1 }} className='tag-cmp app__flex'>
+          <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.5 }} className='tag-cmp app__flex'>
             <p className='p-text'>Front-end Developer</p>
           </motion.div>
         </div>

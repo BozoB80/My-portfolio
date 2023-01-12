@@ -15,6 +15,7 @@
   --white-color: #ffffff;
   --navbar-color: #ffffff41;
   --navtext-color: #6b7688;
+  --navicon-color: #ffffff41;  
   --box-shadow: rgba(0, 0, 0, 0.1);
   --social-color: #ffffff;
   --svg-color: #6b7688;
@@ -39,8 +40,9 @@
   --gray-color: #6b7688;
   --brown-color: #dfd4e2;
   --white-color: #000000;
-  --navbar-color: #03030300;
+  --navbar-color: #0000006e;
   --navtext-color: #ebeef3;
+  --navicon-color: #00000000;
   --header-color: #18223380;
   --box-shadow: rgba(240, 229, 229, 0.678);
   --social-color: #aab0b9;

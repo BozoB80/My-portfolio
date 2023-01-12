@@ -7,7 +7,7 @@ import './App.scss'
 
 const App = () => {
   
-  const defaultDark = 'dark'
+  const defaultDark = 'dark';
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const switchTheme = () => {
