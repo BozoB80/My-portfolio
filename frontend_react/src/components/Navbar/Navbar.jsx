@@ -10,7 +10,7 @@ import './Navbar.scss';
 
 const Navbar = ({switchTheme}) => {
   const [toggle, setToggle] = useState(false);
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(true);
 
   const toggleDarkMode = (checked) => {
     setDarkMode(checked);
