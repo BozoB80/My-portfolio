@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { fadeIn } from '../../utils/motion';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
@@ -19,7 +19,7 @@ const Navbar = ({switchTheme}) => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.blogo} alt="logo" />
+        <img src={isDarkMode ? images.bblogo2 : images.bblogo1} alt="logo" />
       </div>
       <ul className="app__navbar-links">
         {['home', 'skills', 'work', 'about', 'contact'].map((item) => (
