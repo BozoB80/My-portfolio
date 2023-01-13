@@ -1,14 +1,11 @@
-import React from 'react'
-import useLocalStorage from 'use-local-storage'
+import React, { useState }  from 'react'
 
 import { About, Footer, Header, Skills, Testimonial, Work } from './container'
 import { Navbar } from './components'
 import './App.scss'
 
-const App = () => {
-  
-  const defaultDark = 'dark';
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+const App = () => {  
+  const [theme, setTheme] = useState('dark');
 
   const switchTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -17,7 +14,7 @@ const App = () => {
 
   return (
     <div className='app' data-theme={theme}>
-      <Navbar switchTheme={switchTheme} />
+      <Navbar switchTheme={switchTheme} theme={theme} />
       <Header />
       <Skills />
       <Work />
