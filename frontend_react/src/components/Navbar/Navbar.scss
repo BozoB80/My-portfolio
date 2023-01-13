@@ -9,13 +9,14 @@
     background: var(--navbar-color);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
 
     @media screen and (max-width: 650px) {
         padding: 0 1rem;
+        
       }
 
   }
@@ -27,15 +28,11 @@
 
     img {
       width: 80px;
-      height: auto;
+      height: 55px;
 
       @media screen and (min-width: 2000px) {
-        width: 80px;
-        height: auto;
-      }
-      @media screen and (max-width: 1600px) {
-        width: 80px;
-        height: 55px;
+        width: 85px;
+        height: 60px;
       }
     }
   }
@@ -93,7 +90,6 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    position: relative;
 
     display: flex;
     justify-content: center;
@@ -108,7 +104,7 @@
     }
 
     div {
-      position: fixed;
+      position: absolute;
       top: 78px;
       bottom: 0;
       right: 0;
@@ -116,7 +112,7 @@
 
       padding: 1rem;
 
-      width: 70%;
+      width: 300px;
       height: 100vh;
 
       display: flex;
@@ -173,16 +169,13 @@
       @media screen and (min-width: 900px) {
         display: none;
       }
+
+      @media screen and (max-width: 650px) {
+        top: 62px;
+      }
     }
 
     @media screen and (min-width: 900px) {
       display: none;
     }
-  }
-  
-  .button_switch {
-    background-color: var(--navicon-color);
-    border: none;
-
-    
   }
