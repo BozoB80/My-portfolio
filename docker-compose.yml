@@ -1,0 +1,15 @@
+version: '3'
+services:
+  backend_sanity:
+    build:
+      context: ./backend_sanity
+    ports:
+      - '3333:3333'
+
+  frontend_react:
+    build:
+      context: ./frontend_react
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend_sanity
