@@ -13,6 +13,10 @@ To successfully setup a project locally for the first time, please follow next s
 5. run `npm install`
 6. run `npm start`
 
+Or when using docker:
+1. run `docker-compose up`
+2. open `localhost:3000`
+
 What remains to be done:
 - improve logo
 - adjust menu after adjusting content on the site (order of the items)
