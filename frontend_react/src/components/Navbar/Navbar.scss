@@ -42,14 +42,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     list-style: none;
 
     li {
       margin: 0 1rem;
       cursor: pointer;
-
+      position: relative;
       flex-direction: column;
+      padding: 10px 0 10px 0;
 
       div {
         width: 5px;
@@ -71,13 +71,32 @@
 
         &:hover {
           color: var(--secondary-color);
-        }
+        }        
       }
+
+      span {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: var(--navtext-color);
+        transition: width 0.3s ease-in-out;
+
+        &:hover {
+          color: var(--secondary-color);
+        }    
+      }     
 
       &:hover {
         div {
           background: var(--secondary-color);
         }
+        span {
+          width: 100%;
+          background-color: var(--secondary-color);
+        }        
       }
     }
 
@@ -179,3 +198,6 @@
       display: none;
     }
   }
+
+  
+

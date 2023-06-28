@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import { fadeIn, slideIn } from '../../utils/motion';
 import MaterialUISwitch from '../Switch/Switch';
@@ -24,12 +23,12 @@ const Navbar = ({switchTheme, theme}) => {
           <motion.li 
             className="app__flex p-text" 
             key={`link-${item}`}
-            whileHover={{ scale: 1.2 }}
+            whileHover={{ scale: 1.0 }}
             whileTap={{ scale: 0.8 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
           >
-            <div />
             <a href={`#${item}`}>{item}</a>
+            <span />
           </motion.li>
         ))}
       </ul>
