@@ -50,7 +50,8 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
             className="badge-cmp2 about-text">
-            {['As a Junior Frontend Developer with a year of experience under my belt, I have had the opportunity to work on a variety of projects, including a gym project and a project called Nekros which focused on obituary management.',            
+            {['As a Frontend Developer with two years of experience under my belt, I have had the opportunity to work on a variety of projects, including a gym project and a obituary management project.',            
+            'Notably I have created my own project called Biz-Logic which focuses on managing internal communications in production companies.',
             'I have honed my skills in React.js, Next.js, JavaScript, and Tailwind, as well as gained experience working with Framer Motion.',
             'Eager to continue learning and expanding my skills, I am excited to bring my passion and dedication to my next role. Always ready to take on new challenges and thrive in dynamic environments.',
             'Committed to staying up-to-date with the latest frontend technologies and industry trends, and I am always looking for new and innovative ways to improve my skills and deliver high-quality work.'
