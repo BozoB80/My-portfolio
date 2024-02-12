@@ -4,6 +4,7 @@ import api from '../assets/api.png';
 import cpp from '../assets/cpp.png';
 import css from '../assets/css.png';
 import figma from '../assets/figma.png';
+import firebase from '../assets/firebase.png';
 import flutter from '../assets/flutter.png';
 import framer from '../assets/framer.png';
 import git from '../assets/git.png';
@@ -49,6 +50,7 @@ export default {
   cpp,
   css,
   figma,
+  firebase,
   flutter,
   framer,
   git,

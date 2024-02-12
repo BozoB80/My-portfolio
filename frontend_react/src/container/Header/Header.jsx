@@ -51,8 +51,8 @@ const Header = () => {
             transition={{ duration: 0.5 }}
             className="badge-cmp2 about-text">
             {['As a Frontend Developer with four years of experience under my belt, I have had the opportunity to work on a variety of projects, including a gym project and a obituary management project.',            
-            'Notably I have created my own project called Biz-Logic which focuses on managing internal communications in production companies.',
-            'I have honed my skills in React.js, Next.js, JavaScript, and Tailwind, as well as gained experience working with Framer Motion.',
+            'Notably I have created my own project called Biz-Logic which focuses on managing internal communications in production companies. This project also received its own landing page.',
+            'I have honed my skills in React.js, Next.js, TypeScript, and Tailwind, as well as gained experience backend connections to databases such as Sanity, Firebase, and MongoDB.',
             'Eager to continue learning and expanding my skills, I am excited to bring my passion and dedication to my next role. Always ready to take on new challenges and thrive in dynamic environments.',
             'Committed to staying up-to-date with the latest frontend technologies and industry trends, and I am always looking for new and innovative ways to improve my skills and deliver high-quality work.'
             ].map((sentence, i) => (
@@ -82,7 +82,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="app__header-circles"
       >
-        {[images.tailwind, images.javascript, images.react, images.next, images.framer].map((circle, index) => (
+        {[images.tailwind, images.typescript, images.react, images.next, images.firebase].map((circle, index) => (
           <motion.div
             whileHover={{ scale: 1.1 }}
             className='circle-cmp app__flex' 
