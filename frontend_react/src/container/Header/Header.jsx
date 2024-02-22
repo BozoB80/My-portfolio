@@ -41,7 +41,7 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        variants={fadeIn('up', 'tween', 0.5, 1)}
+        variants={fadeIn('up', 'tween', 0.5, 0.8)}
         initial="hidden"
         whileInView="show"
         className='app__intro-badge'
@@ -50,9 +50,9 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
             className="badge-cmp2 about-text">
-            {['As a Frontend Developer with four years of experience under my belt, I have had the opportunity to work on a variety of projects, including a gym project and a obituary management project.',            
-            'Notably I have created my own project called Biz-Logic which focuses on managing internal communications in production companies. This project also received its own landing page.',
-            'I have honed my skills in React.js, Next.js, TypeScript, and Tailwind, as well as gained experience backend connections to databases such as Sanity, Firebase, and MongoDB.',
+            {['As a Frontend Developer with three years of experience under my belt, I have had the opportunity to work on a variety of projects, as assistant to experienced developers.',            
+            'Notably I have created my own project called Biz-Logic which focuses on managing internal communications in large production companies. This project also received its own landing page.',
+            'I have honed my skills in React.js, Next.js, TypeScript, and Tailwind, as well as gained experience in backend connections to databases such as Firebase, MongoDB and Sanity.',
             'Eager to continue learning and expanding my skills, I am excited to bring my passion and dedication to my next role. Always ready to take on new challenges and thrive in dynamic environments.',
             'Committed to staying up-to-date with the latest frontend technologies and industry trends, and I am always looking for new and innovative ways to improve my skills and deliver high-quality work.'
             ].map((sentence, i) => (
@@ -73,7 +73,7 @@ const Header = () => {
           >
             I created this portfolio website with React, SCSS, Framer Motion and Sanity backend in order to showcase some of my skills. 
             <br />
-            I deploy all my work on Netlify or Vercel sites.
+            I store my code on Github and deploy all my work on Vercel or Netlify.
           </motion.p>
       </motion.div>
 
